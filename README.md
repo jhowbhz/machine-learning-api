@@ -21,6 +21,12 @@ Para rodar este projeto localmente, siga os passos abaixo:
 - **Python 3.8 ou superior**: O projeto foi desenvolvido com Python 3.8, mas versões superiores também são compatíveis.
 - **Dependências**: O projeto depende de algumas bibliotecas que podem ser instaladas via `pip`.
 
+#### Clonando o repositorio
+
+```bash
+git clone https://github.com/jhowbhz/machine-learning-api.git machine-learning-api && cd machine-learning-api
+```
+
 ##### Instale as dependências:
 
 ```bash
