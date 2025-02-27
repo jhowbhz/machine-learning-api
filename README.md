@@ -99,3 +99,8 @@ response:
 
 ##### c) Host da API
 https://localhost:8000
+
+##### Prints
+![ffd0b774-2a3c-4994-ad8c-ff939c679659](https://github.com/user-attachments/assets/5d6994e9-f7ea-4a9e-bf4f-82c2ccb39879)
+
+![image](https://github.com/user-attachments/assets/aff341d0-9dab-4ae8-9b9c-5e96a64a7409)
