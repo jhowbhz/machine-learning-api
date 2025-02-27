@@ -7,4 +7,4 @@ uvicorn==0.23.2
 vosk==0.3.30
 torchaudio==2.1.0
 pydub==0.25.1
-pydantic>=2.0
+pydantic>=2.10.6
