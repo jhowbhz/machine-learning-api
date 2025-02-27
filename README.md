@@ -34,26 +34,34 @@ python3 main.py
 ### 3. Documentação
 
 ##### a) /audio-to-text - Transcrição de Áudio
+
+body:
 ```json
-body: {
+{
   "arquivo": "URL_DO_ARQUIVO_DE_AUDIO"
 }
+```
 
-response: {
+response:
+```json
+{
   "transcricao": "Texto transcrito do áudio"
 }
 ```
 
 ##### b) /detect - Detecção de Itens em Imagens
 
+body:
 ```json
-body: {
+{
   "modelo": "yolov5s",
   "confianca": 0.5,
   "arquivo": "URL_DA_IMAGEM"
 }
-
-response: {
+```
+response:
+```json
+{
   "imagem": {
     "url": "URL_DA_IMAGEM",
     "largura": 1920,
