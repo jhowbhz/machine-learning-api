@@ -1,6 +1,6 @@
-# Estudo de Machine Learning - API de Detecção de Itens e Transcrição de Áudio
+# API de Detecção de Itens e Transcrição de Áudio
 
-Este projeto é um estudo de Machine Learning utilizando **YOLOv5** para detecção de objetos em imagens e **Vosk** para transcrição de áudio. 
+Este é um estudo de Machine Learning utilizando **YOLOv5** para detecção de objetos em imagens e **Vosk** para transcrição de áudio. 
 
 Essa API foi construída com **FastAPI** e permite realizar tarefas de detecção de objetos e transcrição de áudios em formato MP3 ou WAV.
 
