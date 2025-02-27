@@ -1,6 +1,7 @@
-# Estudo de Machine Learning - API de Detecção de Itens e Transcrição de Áudio
+# API de Detecção de Itens e Transcrição de Áudio
+![image](https://github.com/user-attachments/assets/aa7a6acb-4cf6-428c-acad-8d03d4cecf66)
 
-Este projeto é um estudo de Machine Learning utilizando **YOLOv5** para detecção de objetos em imagens e **Vosk** para transcrição de áudio. 
+Este é um estudo de Machine Learning utilizando **YOLOv5** para detecção de objetos em imagens e **Vosk** para transcrição de áudio. 
 
 Essa API foi construída com **FastAPI** e permite realizar tarefas de detecção de objetos e transcrição de áudios em formato MP3 ou WAV.
 
@@ -20,6 +21,12 @@ Para rodar este projeto localmente, siga os passos abaixo:
 - **Python 3.8 ou superior**: O projeto foi desenvolvido com Python 3.8, mas versões superiores também são compatíveis.
 - **Dependências**: O projeto depende de algumas bibliotecas que podem ser instaladas via `pip`.
 
+#### Clonando o repositorio
+
+```bash
+git clone https://github.com/jhowbhz/machine-learning-api.git machine-learning-api && cd machine-learning-api
+```
+
 ##### Instale as dependências:
 
 ```bash
@@ -34,26 +41,34 @@ python3 main.py
 ### 3. Documentação
 
 ##### a) /audio-to-text - Transcrição de Áudio
+
+body:
 ```json
-body: {
+{
   "arquivo": "URL_DO_ARQUIVO_DE_AUDIO"
 }
+```
 
-response: {
+response:
+```json
+{
   "transcricao": "Texto transcrito do áudio"
 }
 ```
 
 ##### b) /detect - Detecção de Itens em Imagens
 
+body:
 ```json
-body: {
+{
   "modelo": "yolov5s",
   "confianca": 0.5,
   "arquivo": "URL_DA_IMAGEM"
 }
-
-response: {
+```
+response:
+```json
+{
   "imagem": {
     "url": "URL_DA_IMAGEM",
     "largura": 1920,
@@ -91,3 +106,8 @@ response: {
 
 ##### c) Host da API
 https://localhost:8000
+
+##### Prints
+![ffd0b774-2a3c-4994-ad8c-ff939c679659](https://github.com/user-attachments/assets/5d6994e9-f7ea-4a9e-bf4f-82c2ccb39879)
+
+![image](https://github.com/user-attachments/assets/aff341d0-9dab-4ae8-9b9c-5e96a64a7409)
