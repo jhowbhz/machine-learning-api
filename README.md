@@ -1,4 +1,5 @@
-# API de Detecção de Itens e Transcrição de Áudio
+![image](https://github.com/user-attachments/assets/3e4a2609-b5c3-4cc8-bf58-80acd522d555)# API de Detecção de Itens e Transcrição de Áudio
+![image](https://github.com/user-attachments/assets/aa7a6acb-4cf6-428c-acad-8d03d4cecf66)
 
 Este é um estudo de Machine Learning utilizando **YOLOv5** para detecção de objetos em imagens e **Vosk** para transcrição de áudio. 
 
