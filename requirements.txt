@@ -9,3 +9,4 @@ torchaudio==2.1.0
 pydub==0.25.1
 pydantic>=2.10.6
 pandas>=2.2.3
+pillow>=11.1.0
