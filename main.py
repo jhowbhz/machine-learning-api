@@ -14,7 +14,6 @@ import tempfile  # Corrigido: importando o módulo tempfile corretamente
 import wave
 
 import vosk
-import torchaudio
 from glob import glob
 import requests
 
