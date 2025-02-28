@@ -1,9 +1,7 @@
-# API de Detecção de Itens e Transcrição de Áudio
-![image](https://github.com/user-attachments/assets/aa7a6acb-4cf6-428c-acad-8d03d4cecf66)
+# Assistente de IA Cassandra - API
 
-Este é um estudo de Machine Learning utilizando **YOLOv5** para detecção de objetos em imagens e **Vosk** para transcrição de áudio. 
-
-Essa API foi construída com **FastAPI** e permite realizar tarefas de detecção de objetos e transcrição de áudios em formato MP3 ou WAV.
+<img src="https://github.com/user-attachments/assets/71af7aca-d484-4580-98e5-e0b7609682ec" widh="100%" alt="Assistente de IA"/>
+Este é um estudo de Machine Learning utilizando **YOLOv5** e outros modelos de IA, para detecção de objetos em imagens, transcrição de áudio, detecção de sentimento em textos e muito mais... 
 
 ## Funcionalidades
 
