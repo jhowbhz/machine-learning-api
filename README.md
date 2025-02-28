@@ -1,14 +1,15 @@
 # Assistente de IA Cassandra - API
 
-<img src="https://github.com/user-attachments/assets/71af7aca-d484-4580-98e5-e0b7609682ec" widh="100%" alt="Assistente de IA"/>
-Este é um estudo de Machine Learning utilizando **YOLOv5** e outros modelos de IA, para detecção de objetos em imagens, transcrição de áudio, detecção de sentimento em textos e muito mais... 
+<img src="https://github.com/user-attachments/assets/71af7aca-d484-4580-98e5-e0b7609682ec" style="width:100%" alt="Assistente de IA" />
+<hr />
+<p> Este é um estudo de Machine Learning utilizando alguns modelos específicos de IA, para detecção de objetos em imagens, transcrição de áudio, detecção de sentimento em textos e muito mais... </p>
 
-## Funcionalidades
+## Funcionalidades básicas
 
 - **Detecção de Itens em Imagens**: Recebe uma URL de imagem e retorna os itens detectados com informações detalhadas sobre a imagem.
 - **Transcrição de Áudio**: Recebe uma URL de áudio (MP3 ou WAV) e retorna a transcrição do conteúdo utilizando o modelo **Vosk**.
 
-## Como Usar
+## Como usar
 
 ### 1. Instalação
 
