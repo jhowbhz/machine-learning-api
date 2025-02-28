@@ -4,21 +4,11 @@
 <hr />
 <p> Este é um estudo de Machine Learning utilizando alguns modelos específicos de IA, para detecção de objetos em imagens, transcrição de áudio, detecção de sentimento em textos e muito mais... </p>
 
-## Funcionalidades básicas
-
-- **Detecção de Itens em Imagens**: Recebe uma URL de imagem e retorna os itens detectados com informações detalhadas sobre a imagem.
-- **Transcrição de Áudio**: Recebe uma URL de áudio (MP3 ou WAV) e retorna a transcrição do conteúdo utilizando o modelo **Vosk**.
-
 ## Como usar
 
 ### 1. Instalação
 
 Para rodar este projeto localmente, siga os passos abaixo:
-
-#### Pré-requisitos:
-
-- **Python 3.8 ou superior**: O projeto foi desenvolvido com Python 3.8, mas versões superiores também são compatíveis.
-- **Dependências**: O projeto depende de algumas bibliotecas que podem ser instaladas via `pip`.
 
 #### Clonando o repositorio
 
