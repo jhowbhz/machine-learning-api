@@ -5,7 +5,7 @@ numpy==1.24.1
 torch==2.6.0
 uvicorn==0.23.2
 vosk==0.3.30
-torchaudio==2.1.0
+torchaudio==2.6.0
 pydub==0.25.1
 pydantic>=2.10.6
 pandas>=2.2.3
