@@ -1,3 +1,5 @@
 models/
 processed_images/
 venv/
+*.pt
+*.pyc
