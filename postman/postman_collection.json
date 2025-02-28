@@ -1,0 +1,127 @@
+{
+	"info": {
+		"_postman_id": "9c8c6606-1708-450c-9d6a-910114889481",
+		"name": "IA - Cassandra",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24382542",
+		"_collection_link": "https://docs-apibrasil.postman.co/workspace/ITENS-PESSOAIS~40fb5d09-7549-4e54-bf10-f6489dcc9253/collection/24382542-9c8c6606-1708-450c-9d6a-910114889481?action=share&source=collection_link&creator=24382542"
+	},
+	"item": [
+		{
+			"name": "image-to-json",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"modelo\": \"yolov5x\",\r\n    \"confianca\": 0.80,\r\n    \"arquivo\": \"https://instagram.fplu33-1.fna.fbcdn.net/v/t51.29350-15/271265350_1269761580193177_7505442296497905589_n.jpg?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6ImltYWdlX3VybGdlbi4xNDQweDE0Mzkuc2RyLmYyOTM1MC5kZWZhdWx0X2ltYWdlIn0&_nc_ht=instagram.fplu33-1.fna.fbcdn.net&_nc_cat=101&_nc_oc=Q6cZ2AGfYfb7tqM2udd7w2-KrHwlFfq1MHmuNDS_o_FwDOwJ5hCofaxQbM2C7aGcueT280aZSe1oHoAULiq0siJZI9e0&_nc_ohc=Xq_EI4NWBbkQ7kNvgErbMzr&_nc_gid=c3e6eb3939694f3bb19479600e436c8d&edm=APoiHPcBAAAA&ccb=7-5&ig_cache_key=Mjc0Mzg4MTg2MzI1NzI3MDY0Mg%3D%3D.3-ccb7-5&oh=00_AYBFMoXV43YAlekK6834nNML0uk0IslX5DYsu2gbvQvSjg&oe=67C7D402&_nc_sid=22de04\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{HOST}}/image-to-json",
+					"host": [
+						"{{HOST}}"
+					],
+					"path": [
+						"image-to-json"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "audio-to-text",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"arquivo\": \"https://s5.ttsmaker-file.com/file/2025-02-27-073930_147875.mp3\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{HOST}}/audio-to-text",
+					"host": [
+						"{{HOST}}"
+					],
+					"path": [
+						"audio-to-text"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "text-to-feelings",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"text\": \"Comprei um produto ele é muito bom, porém ele veio com 5 peças a mais do que eu pedi eu fiquei feliz!\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{HOST}}/text-to-feelings",
+					"host": [
+						"{{HOST}}"
+					],
+					"path": [
+						"text-to-feelings"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "HOST",
+			"value": "http://localhost:8000",
+			"type": "string"
+		}
+	]
+}
