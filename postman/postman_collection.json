@@ -37,6 +37,35 @@
 			"response": []
 		},
 		{
+			"name": "image-to-text",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"modelo\": \"db_resnet50\",\r\n  \"arquivo\": \"https://raw.githubusercontent.com/mindee/doctr/main/docs/images/synthesized_sample.png\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{HOST}}/image-to-text",
+					"host": [
+						"{{HOST}}"
+					],
+					"path": [
+						"image-to-text"
+					]
+				}
+			},
+			"response": []
+		},
+		{
 			"name": "audio-to-text",
 			"request": {
 				"auth": {
@@ -46,7 +75,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"arquivo\": \"https://s5.ttsmaker-file.com/file/2025-02-27-073930_147875.mp3\"\r\n}",
+					"raw": "{\r\n    \"arquivo\": \"https://upnow-prod.ff45e40d1a1c8f7e7de4e976d0c9e555.r2.cloudflarestorage.com/SyNbbKbcrcOeSbRzLtkqYNsOaJR2/b25b6548-52b4-4e87-8839-464254ca6164?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=cdd12e35bbd220303957dc5603a4cc8e%2F20250301%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20250301T002411Z&X-Amz-Expires=43200&X-Amz-Signature=de94b7509b37deccc05b492f5cd19cb42bb6fb23f30fa0e381ecce283b10cbcf&X-Amz-SignedHeaders=host&response-content-disposition=attachment%3B%20filename%3D%22ttsmaker-file-2025-2-26-20-39-35.mp3%22\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -66,6 +95,35 @@
 			"response": []
 		},
 		{
+			"name": "text-to-audio",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"texto\": \"Isso era um texto. e agora virou um áudio.\",\r\n  \"indice_voz\": \"brazil\",\r\n  \"velocidade\": 122,\r\n  \"volume\": 2.4\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{HOST}}/text-to-audio",
+					"host": [
+						"{{HOST}}"
+					],
+					"path": [
+						"text-to-audio"
+					]
+				}
+			},
+			"response": []
+		},
+		{
 			"name": "text-to-feelings",
 			"request": {
 				"auth": {
@@ -75,7 +133,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"text\": \"Comprei um produto ele é muito bom, porém ele veio com 5 peças a mais do que eu pedi eu fiquei feliz!\"\r\n}",
+					"raw": "{\r\n    // \"text\": \"Eu estou\"\r\n    // \"text\": \"Eu comprei essa caneta e não gostei, as cores que ela escreve são ruins, não tem boa escrita!\"\r\n    \"text\": \"Era uma vez, em um reino distante, um rei e uma rainha foram abençoados com o nascimento de uma linda princesa. O povo celebrou com festas e danças, felizes pelo futuro brilhante que aguardava a pequena herdeira. No entanto, ao cair da noite, algo terrível aconteceu. Um feitiço sombrio se revelou, transformando a jovem em algo inesperado. Desesperados, os reis buscaram ajuda e, por fim, uma fada madrinha aconselhou: a princesa deveria ser trancada em uma torre até que o verdadeiro amor a libertasse com um beijo. Assim, a lenda nasceu. Um bravo e nobre príncipe enfrentaria perigos sem fim—florestas sombrias, mares revoltos e montanhas traiçoeiras—para alcançar a torre e quebrar a maldição. Ele era forte, destemido e destinado a esse feito grandioso. Mas o destino é caprichoso... Em um pântano distante, uma criatura nada convencional vivia sua vida em paz, até que tudo mudou. Entre equívocos, amizades improváveis e aventuras inesperadas, a história tomou um rumo diferente do esperado. E, no fim das contas, o verdadeiro amor pode estar onde menos se espera.\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -89,6 +147,27 @@
 					],
 					"path": [
 						"text-to-feelings"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "voices",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{HOST}}/audio/voices",
+					"host": [
+						"{{HOST}}"
+					],
+					"path": [
+						"audio",
+						"voices"
 					]
 				}
 			},
