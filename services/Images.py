@@ -83,17 +83,19 @@ class Images:
 
         image_name = f"{uuid.uuid4()}.jpg"
         image_path = os.path.join(OUTPUT_DIR, image_name)
-        
+
         cv2.imwrite(image_path, image)
 
         return {
-            "imagem_original": url,
-            "modelo_utilizado": modelo,
             "confianca_utilizada": confianca,
             "tempo_inferencia": round(inference_time, 4),
             "quantidade_itens": len(detections_list),
             "media_confianca": round(avg_confidence, 4),
-            "classes_detectadas": list(set(detections['name'].tolist())) if 'name' in detections else [],
-            "detecções": detections_list,
-            "imagem_processada": f"http://localhost:8000/static/{image_name}"
+            "deteccoes": detections_list,
+            "extra": {
+                "classes_detectadas": list(set(detections['name'].tolist())) if 'name' in detections else [],
+                "imagem_original": url,
+                "imagem_processada": f"http://localhost:8000/static/{image_name}",
+                "modelo": modelo,
+            }
         }

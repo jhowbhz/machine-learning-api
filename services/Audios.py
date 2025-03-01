@@ -57,7 +57,20 @@ class Audios:
             os.remove(temp_audio_file_path)
             os.remove(audio_wav_path)
 
-            return {"transcricao": transcription}
+            return {
+                "transcricao": transcription,
+                "extra": {
+                    'audio': {
+                        'canais': wf.getnchannels(),
+                        'amostras_por_segundo': wf.getframerate(),
+                        'amostras_por_quadro': wf.getnframes(),
+                        'tamanho_quadro': wf.getsampwidth(),
+                        'duracao': wf.getnframes() / wf.getframerate(),
+                        "formato": wf.getparams()._asdict()
+                    },
+                    'modelo': "vosk-model-small-pt-0.3"
+                }
+            }
 
         except Exception as e:
             raise HTTPException(status_code=400, detail=f"Erro ao processar o áudio: {e}")

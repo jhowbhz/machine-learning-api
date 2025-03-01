@@ -17,10 +17,9 @@ class Texts:
             "sentimento": result[0]["label"],
             "confianca": result[0]["score"],
             "extra": {
-                'text': data.text,
+                'texto': data.text,
                 'score': result[0]["score"],
-                'label': result[0]["label"],
-                'framework': "pt",
-                'model': "cardiffnlp/xlm-roberta-base-sentiment-multilingual"
+                'rotulo': result[0]["label"],
+                'modelo': "cardiffnlp/xlm-roberta-base-sentiment-multilingual"
             }
         }
