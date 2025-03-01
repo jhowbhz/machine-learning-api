@@ -35,3 +35,6 @@ http://localhost:8000/docs
 Local e porta onde sua api está rodando 
 
 https://localhost:8000
+
+### Print
+![image](https://github.com/user-attachments/assets/c9c64e5e-71a4-4d4f-96a4-41be0f0e37bd)
