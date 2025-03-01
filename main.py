@@ -19,7 +19,7 @@ app = FastAPI(
         "Essa API é capaz de detectar sentimentos em textos, identificar objetos em imagens, "
         "converter texto em áudio, áudio em texto e imagem em texto."
     ),
-    version="1.4"
+    version="0.0.3"
 )
 
 # Criar diretórios para arquivos processados, se não existirem
