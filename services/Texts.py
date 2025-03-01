@@ -5,6 +5,8 @@ from doctr.io import DocumentFile
 from doctr.models import ocr_predictor
 from transformers import pipeline
 
+from fastapi import HTTPException
+
 class TextString(BaseModel):
     text: str
 
