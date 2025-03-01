@@ -8,8 +8,8 @@ from services.Audios import Audios, AudioURL
 from services.Texts import Texts, TextString
 
 app = FastAPI(
-    title="API de Detecção de Itens",
-    description="Recebe uma URL de imagem e retorna os itens detectados utilizando YOLOv5",
+    title="API Cassandra - Assistente de IA",
+    description="Essa API é capaz de detectar sentimentos em textos, transcrever áudios e identificar objetos em imagens.",
     version="1.4"
 )
 
