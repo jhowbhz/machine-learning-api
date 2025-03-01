@@ -6,7 +6,7 @@
 
 ## Como usar
 
-### 1. Instalação
+### 1. Download e instalação
 
 Para rodar este projeto localmente, siga os passos abaixo:
 
