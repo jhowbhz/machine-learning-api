@@ -78,7 +78,7 @@ class Texts:
                 "sentimento": result[0]["label"],
                 "confianca": result[0]["score"],
                 "detalhes": {
-                    "quantidade_letras": len(data.text),
+                    "quantidade_caracteres": len(data.text),
                     "score": result[0]["score"],
                     "rotulo": result[0]["label"],
                     "modelo": "cardiffnlp/xlm-roberta-base-sentiment-multilingual"
