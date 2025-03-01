@@ -1,5 +1,7 @@
 models/
 processed_images/
+processed_audios/
 venv/
 *.pt
 *.pyc
+.env
