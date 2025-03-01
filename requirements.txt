@@ -15,3 +15,7 @@ demucs>=4.0.1
 diffq>=0.0.1
 gitpython>=3.1.30
 setuptools>=70.0.0
+pyttsx3>=2.98.0
+dotenv>=0.9.9
+doctr>=1.9.0
+python-doctr[torch]

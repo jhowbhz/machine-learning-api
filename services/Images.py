@@ -95,7 +95,7 @@ class Images:
             "extra": {
                 "classes_detectadas": list(set(detections['name'].tolist())) if 'name' in detections else [],
                 "imagem_original": url,
-                "imagem_processada": f"http://localhost:8000/static/{image_name}",
+                "imagem_processada": f"http://localhost:8000/images/{image_name}",
                 "modelo": modelo,
             }
         }
