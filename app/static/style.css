@@ -1,0 +1,160 @@
+/* Importação da fonte Ubuntu */
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap');
+
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilização geral do body e html */
+body, html {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Ubuntu', sans-serif;
+    background-color: #f4f7fc;
+    overflow-x: hidden;
+}
+
+/* Container fluido ocupando toda a altura */
+.container-fluid {
+    height: 100%;
+    padding: 0;
+}
+
+/* Cabeçalho aprimorado com gradiente e mais espaçamento */
+header {
+    background: linear-gradient(135deg, #343a40, #495057);
+    color: white;
+    padding: 30px 20px; /* Aumentei o padding para mais espaço */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 2.5rem;
+    padding: 15px 0; /* Ajustei o padding interno do h1 */
+}
+
+/* Rodapé simples e elegante */
+footer {
+    background-color: #343a40;
+    color: white;
+    text-align: center;
+    padding: 30px;
+    margin-top: 20px;
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Conteúdo principal com borda sutil e melhorias visuais */
+main {
+    height: calc(100% - 120px);
+    overflow-y: auto;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border: 1px solid #e9ecef; /* Adicionei uma borda sutil */
+    animation: fadeIn 0.3s ease-in-out; /* Tornei a animação mais rápida */
+}
+
+/* Estilização de textos no main */
+main p, main li {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+main p {
+    margin-bottom: 20px;
+}
+
+/* Links no conteúdo principal */
+main a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+main a:hover {
+    text-decoration: underline;
+}
+
+/* Sidebar moderna e funcional com hover mais suave */
+.sidebar {
+    height: 100%;
+    background-color: #f8f9fa;
+    padding-top: 20px;
+    border-right: 2px solid #eee;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.sidebar .nav-item {
+    margin-bottom: 15px;
+}
+
+.sidebar .nav-link {
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    font-size: 1.1rem;
+    color: #495057;
+    font-weight: 500;
+    transition: all 0.3s ease; /* Suavizei a transição */
+    border-radius: 5px;
+}
+
+.sidebar .nav-link:hover {
+    background-color: #007bff;
+    color: white;
+    transform: translateX(3px); /* Reduzi o deslocamento para um efeito mais sutil */
+}
+
+.sidebar .nav-link.active {
+    background-color: #007bff;
+    color: white;
+}
+
+.sidebar .fa {
+    font-size: 1.4rem;
+    margin-right: 10px;
+}
+
+/* Linha ocupando toda a largura */
+.row {
+    width: 100%;
+}
+
+/* Responsividade para telas grandes */
+@media (min-width: 769px) {
+    .sidebar {
+        display: block;
+    }
+}
+
+/* Responsividade para telas pequenas */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 100%;
+        padding: 15px;
+        border-right: none;
+        display: none;
+    }
+    main {
+        padding: 20px;
+        margin-top: 20px;
+    }
+}
+
+/* Animação de entrada mais rápida e suave */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px); /* Adicionei um leve movimento vertical */
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
