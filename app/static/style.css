@@ -50,14 +50,9 @@ footer {
 
 /* Conteúdo principal com borda sutil e melhorias visuais */
 main {
-    height: calc(100% - 120px);
     overflow-y: auto;
     padding: 30px;
     background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    border: 1px solid #e9ecef; /* Adicionei uma borda sutil */
-    animation: fadeIn 0.3s ease-in-out; /* Tornei a animação mais rápida */
 }
 
 /* Estilização de textos no main */
